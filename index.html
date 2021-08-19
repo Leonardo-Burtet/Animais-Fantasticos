@@ -5,34 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animais Fantásticos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
-      rel="stylesheet"
-    />
     <script>
       document.documentElement.className += " js";
     </script>
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <div class="grid-container">
-      <nav class="menu">
+      <nav class="menu" data-menu="suave">
         <ul>
           <li><a href="#animais">Animais</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
           <li><a href="#faq">Faq</a></li>
           <li><a href="#contato">Contato</a></li>
           <li>
-            <a data-modal="abrir" href="https://www.origamid.com">Login →</a>
+            <a data-modal="abrir" href="login.html">Login →</a>
           </li>
         </ul>
       </nav>
 
-      <section class="grid-section animais" id="animais">
+      <section class="grid-section animais" data-anime="scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista js-tabmenu">
+        <ul class="animais-lista" data-tab="menu">
           <li>
             <img src="img/imagem1.jpg" />
           </li>
@@ -53,8 +56,8 @@
           </li>
         </ul>
 
-        <div class="animais-descricao js-tabcontent">
-          <section>
+        <div class="animais-descricao" data-tab="content">
+          <section data-anime="show-right">
             <h2>Raposa</h2>
             <p>
               As raposas são animais mamíferos e onívoros pertencentes à família
@@ -72,13 +75,8 @@
               pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
               raposa vermelha é a mais comum.
             </p>
-
-            <p>
-              Também apresentam como particularidade suas pupilas ovais,
-              semelhantes às pupilas verticais dos felídeos.
-            </p>
           </section>
-          <section>
+          <section data-anime="show-right">
             <h2>Esquilo</h2>
             <p>
               As raposas são animais mamíferos e onívoros pertencentes à família
@@ -102,13 +100,8 @@
               semelhantes às pupilas verticais dos felídeos.
             </p>
           </section>
-          <section>
+          <section data-anime="show-down">
             <h2>Urso</h2>
-            <p>
-              As raposas são animais mamíferos e onívoros pertencentes à família
-              Canidae. São vulpídeos de porte médio, caracterizados por um
-              focinho comprido e uma cauda longa e peluda.
-            </p>
 
             <p>
               apresentam como particularidade suas pupilas ovais, semelhantes às
@@ -126,7 +119,7 @@
               semelhantes às pupilas verticais dos felídeos.
             </p>
           </section>
-          <section>
+          <section data-anime="show-down">
             <h2>Lobo</h2>
             <p>
               As raposas são animais mamíferos e onívoros pertencentes à família
@@ -135,11 +128,6 @@
             </p>
 
             <p>
-              apresentam como particularidade suas pupilas ovais, semelhantes às
-              pupilas verticais dos felídeos.
-            </p>
-
-            <p>
               De cerca de 40 espécies reconhecidas como raposas, somente 12
               pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
               raposa vermelha é a mais comum.
@@ -150,7 +138,7 @@
               semelhantes às pupilas verticais dos felídeos.
             </p>
           </section>
-          <section>
+          <section data-anime="show-right">
             <h2>Macaco</h2>
             <p>
               As raposas são animais mamíferos e onívoros pertencentes à família
@@ -174,7 +162,7 @@
               semelhantes às pupilas verticais dos felídeos.
             </p>
           </section>
-          <section>
+          <section data-anime="show-right">
             <h2>Leão</h2>
             <p>
               As raposas são animais mamíferos e onívoros pertencentes à família
@@ -186,23 +174,12 @@
               apresentam como particularidade suas pupilas ovais, semelhantes às
               pupilas verticais dos felídeos.
             </p>
-
-            <p>
-              De cerca de 40 espécies reconhecidas como raposas, somente 12
-              pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a
-              raposa vermelha é a mais comum.
-            </p>
-
-            <p>
-              Também apresentam como particularidade suas pupilas ovais,
-              semelhantes às pupilas verticais dos felídeos.
-            </p>
           </section>
         </div>
       </section>
-      <section class="grid-section faq" id="faq">
+      <section class="grid-section faq" data-anime="scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista">
+        <dl class="faq-lista" data-anime="accordion">
           <dt>Qual a idade dos animais?</dt>
           <dd>
             As raposas são animais mamíferos e onívoros pertencentes à familia
@@ -228,9 +205,13 @@
         </dl>
       </section>
 
-      <section class="grid-section contato" id="contato">
+      <section class="grid-section contato" data-anime="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
-        <div class="mapa">
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento."
+        >
           <img src="img/mapa.png" />
         </div>
         <ul class="dados">
