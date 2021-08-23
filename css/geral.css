@@ -50,7 +50,7 @@ body {
   margin-right: 10px;
   color: #222;
   text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: monospace;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -78,7 +78,7 @@ body {
 }
 
 .animais h2 {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: monospace;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -138,7 +138,7 @@ body {
 }
 
 .faq-lista dt {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: monospace;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -190,7 +190,7 @@ body {
 
 .copy p {
   padding: 20px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: monospace;
   font-weight: bold;
 }
 
@@ -234,12 +234,12 @@ body {
   display: block !important;
 }
 
-[data-tab="content"] section.ativo.show-right {
-  animation: show-right 0.5s forwards;
+[data-tab="content"] [data-anime="show-right"] {
+  animation: show-right 1s forwards;
 }
 
-[data-tab="content"] section.ativo.show-down {
-  animation: show-down 0.5s forwards;
+[data-tab="content"] [data-anime="show-down"] {
+  animation: show-down 1s forwards;
 }
 
 @keyframes show-right {

@@ -14,7 +14,10 @@
   <body>
     <div class="grid-container">
       <nav class="menu" data-menu="suave">
-        <ul>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
           <li><a href="#animais">Animais</a></li>
           <li data-dropdown>
             <a href="sobre.html">Sobre</a>
@@ -203,6 +206,28 @@
             semelhantes às pupilas verticuais dos felídeos.
           </dd>
         </dl>
+      </section>
+
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid">
+          <div class="numero-animal">
+            <h3>Lobos</h3>
+            <span data-numero>4874</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Raposas</h3>
+            <span data-numero>5974</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Esquilos</h3>
+            <span data-numero>274</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Urso</h3>
+            <span data-numero>32274</span>
+          </div>
+        </div>
       </section>
 
       <section class="grid-section contato" data-anime="scroll" id="contato">
