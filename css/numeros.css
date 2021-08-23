@@ -5,6 +5,12 @@
   grid-gap: 30px;
 }
 
+@media (max-width: 700px) {
+  .numeros-grid {
+    grid-column: 1;
+  }
+}
+
 .numeros-grid h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
