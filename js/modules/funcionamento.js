@@ -13,6 +13,6 @@ export default function initFuncionamento() {
     horarioAgora >= horarioSemana[0] && horarioAgora < horarioSemana[1];
 
   if (semanaAberto && horarioAberto) {
-    functionamento.classList.add("aberto");
+    funcionamento.classList.add("aberto");
   }
 }
