@@ -1,0 +1,22 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "description": "Layout criado para aplicar técnicas de manipulação do DOM com javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardo-Burtet/Animais-Fantasticos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonardo-Burtet/Animais-Fantasticos/issues"
+  },
+  "homepage": "https://github.com/Leonardo-Burtet/Animais-Fantasticos#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  }
+}
